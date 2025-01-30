@@ -66,7 +66,7 @@ if ($_SESSION['nombre'] == "andres"){
     <hr>
     <div class="abajo">
         <div>
-            <a href="" class="autor">
+            <a href="https://github.com/IvanitoVS" target="_blank" class="autor">
                 Iván Villena Sánchez 👍
             </a>
         </div>
