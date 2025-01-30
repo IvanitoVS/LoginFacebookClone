@@ -1,0 +1,300 @@
+/*
+*       30/01/2025
+*   Iván Villena Sánchez
+*       
+*/
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    margin: 0px;
+    background-color: #3B5999;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sesionBox {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    
+    margin-left: 20px;
+    width: 200px;
+    height: 100px;
+    filter: grayscale(1) brightness(10);
+}
+
+.usuario, .passwd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 10px;
+    height: auto;
+}
+
+.logear {
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.recordar {
+    display: flex;
+    flex-direction: row;
+    width: 120px;
+    align-items: end;
+    color: lightgray;
+}
+
+input{
+    padding: 5px;
+    height: 30px;
+    margin-top: 5px;
+    width: 230px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+input[type="checkbox"] {
+
+    height: 18px;
+    width: 18px;
+    border: 3px solid black;
+    border-radius: 0px;
+    
+}
+
+input[type="checkbox"]:hover {
+    box-shadow: 0px 0px 3px black;
+}
+
+label:hover {
+    color: white;
+}
+
+button[type="submit"] {
+
+    width: 60px;
+    height: 30px;
+    margin: 0px;
+    background-color: #5F74A4;
+    border: 1px solid darkblue;
+    color: white;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+button[type="submit"]:hover {
+    font-size: 90%;
+    background-color: #7089c2;
+    border: 1px solid black;
+}
+
+a{
+    font-style: normal;
+    color: lightgray;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+.formularioSesion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 0px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, #4972c96e, transparent);
+}
+
+.menuLogin {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.formularioRegistro {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 350px;
+        label {
+            display: flex;
+            justify-content: flex-end;
+            width: 150px;
+        }
+        input {
+            margin-left: 10px;
+            width: 200px;
+        }
+    }
+}
+
+.lregistro:hover {
+    color: black;
+}
+
+select {
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 200px;
+    height: 30px;
+}
+
+select:focus {
+    border: 2px solid black;
+
+}
+
+.registrarse {
+    margin: 100px;
+}
+
+button[type="submit"].botonregistro {
+    margin: 10px;
+    margin-left: 10px;
+    height: 30px;
+    width: 90px;
+    background-color: #74AD5A;
+    font-weight: bold;
+    color: White;
+    box-shadow: none;
+}
+
+button[type="submit"].botonregistro:hover {
+    background-color: #77bd57 ;
+}
+
+.parrafoMain, h3, h4 {
+    font-weight: bold;
+    color: darkblue;
+    font-size: 1.2em;
+    margin: 0px;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.parrafoMain {
+    width: 500px;
+    margin-bottom: 0px;
+    padding-left: 20px;
+}
+
+.mapa {
+    margin-bottom: 100px;
+    img {
+        margin-top: 30px;
+    }
+}
+
+footer {
+    margin: 10 10%;
+}
+
+.about {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.abajo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.idiomas, .about {
+    a {
+        font-size: small;
+        color:#3B5999;
+        margin: 0px 5px;
+    }
+}
+
+p {
+    margin: 0 5px;
+    font-size: small;
+    color: grey;
+    width: 150px; 
+}
+
+.crearweb {
+    width: 100%;
+    font-size: small;
+}
+
+.web {
+    color:#3B5999;
+    font-size: small;
+    font-weight: bolder;
+}
+
+.error {
+
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    margin-right: 250px;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    p {
+        width: 100%;
+        text-align: end;
+        color: lightgray;
+    }
+    
+}
+
+.autor {
+    margin: 0 5px;
+    font-size: small;
+    color: grey;
+    width: 150px;
+}
+
+.autor:hover {
+    color: black;
+}
+

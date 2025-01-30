@@ -1,0 +1,50 @@
+.sesion {
+    display: flex;
+    flex-direction: row;
+
+}
+.parrafoSesion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.nombre {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    width: 80px;
+}
+.sesion a {
+    margin: 20px;
+    padding: 5px ;
+    color: lightgrey;
+    border-radius: 100px;
+    height: auto;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: red;
+    text-align: end;
+
+}
+a:hover {
+    box-shadow: 0px 0px 15px 0px darkred;
+}
+.letra {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background-color: darkred;
+    font-weight: bold;
+    color: white;
+    font-size: large;
+    border-radius: 50%;
+    border: 2px solid white;   
+}
+h1 {
+    color: darkblue;
+    text-align: center;
+}
