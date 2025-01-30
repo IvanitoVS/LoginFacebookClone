@@ -2,7 +2,7 @@ Tipos de archivos
 *.pdf
 *.jpeg
 *.jpg 
-*.md
+*.sql
 
 Archivos y carpetas del sistema operativo
 .DS_Store
