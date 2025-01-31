@@ -11,7 +11,7 @@ $usuarios = [];
 // Establecer conexión
 try {
     $conexion = mysqli_connect($host, $usuario, $password, $dbname);
-    $sql = "SELECT email,password FROM usuarios";
+    $sql = "SELECT nombre,email,password FROM usuarios";
     $query = mysqli_query($conexion, $sql);
     // Forma Noemi
     while ( $fila = $query->fetch_assoc() ) {
@@ -33,7 +33,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { //  Verificamos que la sesión haya 
 
     for ($i = 0; $i<count($usuarios); $i++) {
         if ($user == $usuarios[$i]["email"] && $pass == $usuarios[$i]["password"] ) {
-            $_SESSION['nombre'] = $usuario;
+            $_SESSION['nombre'] = $usuarios[$i]["nombre"];
+            $_SESSION['email'] = $usuarios[$i]["email"];
             header("Location: index.php");
             exit();
         }

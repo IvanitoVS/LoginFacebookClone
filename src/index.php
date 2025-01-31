@@ -1,15 +1,17 @@
 <?php 
 session_start();
 
-$letra = "R";
+$letra = substr($_SESSION['nombre'],0,1);
+$letra = strtoupper($letra);
+$_SESSION['nombre'] = $letra . substr($_SESSION['nombre'],1,);
 ?>
 
 
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styleLogin.css">
-    <link rel="stylesheet" href="css/styleIndex.css">
+    <link rel="stylesheet" href="../css/styleLogin.css">
+    <link rel="stylesheet" href="../css/styleIndex.css">
     <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png" type="image/x-icon">
     <title>Inicio</title>
 </head>
@@ -31,18 +33,39 @@ $letra = "R";
         <a href="logout.php" class="cerrarSesion">Cerrar Sesión</a>
     </div>
 
-    <div class="error">
-        <p><?= @$mensaje = $_GET['mensaje']; ?></p>
-    </div>
 </header>
 </header>
 
 <main>
 
- <div class="mapa">
+    <div class="bienvenido">
         <h1>¡Bienvenido!</h1>
-        <img src="https://i.postimg.cc/Wb7QX00n/OBa-Vg52wt-TZ.png" alt="mapa">
     </div>
+
+    <form action="envioCorreo.php" method="POST">
+        <fieldset>
+            <legend><label for="tuemail">Tu email: <span class="obligatorio">*</span></label></legend>
+            <input type="email" name="tuemail" id="tuemail" placeholder="example@example.com" required>
+        </fieldset>
+        <fieldset>
+            <legend>Asunto: <span class="obligatorio">*</span></legend>
+            <label for="asunto"></label>
+            <input type="text" name="asunto" id="asunto" placeholder="Asunto..." required>
+        </fieldset>
+        <fieldset>
+            <legend>Mensaje: <span class="obligatorio">*</span></legend>
+            <label for="mensaje"></label>
+            <textarea name="mensaje" id="mensaje" placeholder="Escribe un mensaje...." required></textarea>
+        </fieldset>
+        <div class="botonesCorreo">
+
+        <button type="submit" class="bCorreo">Enviar</button>
+        <button type="reset" class="bCorreo">Borrar</button>
+        <p><?= @$mensaje = $_GET['mensaje']; ?></p>
+        </div>
+
+    </form>
+
 
 </main>
 

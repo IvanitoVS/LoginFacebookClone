@@ -36,7 +36,7 @@ header {
     
     margin-left: 20px;
     width: 200px;
-    height: 100px;
+    height: auto;
     filter: grayscale(1) brightness(10);
 }
 
@@ -94,7 +94,7 @@ label:hover {
     color: white;
 }
 
-button[type="submit"] {
+button[type="submit"], button[type="reset"] {
 
     width: 60px;
     height: 30px;
@@ -106,7 +106,7 @@ button[type="submit"] {
     box-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 
-button[type="submit"]:hover {
+button[type="submit"]:hover, button[type="reset"]:hover {
     font-size: 90%;
     background-color: #7089c2;
     border: 1px solid black;

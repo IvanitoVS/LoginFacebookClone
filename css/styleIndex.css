@@ -15,11 +15,12 @@
     font-size: 1.5em;
     width: 80px;
 }
-.sesion a {
+.cerrarSesion{
     margin: 20px;
     padding: 5px ;
     color: lightgrey;
     border-radius: 100px;
+    border: 1px solid darkblue;
     height: auto;
     font-size: 14px;
     font-weight: bold;
@@ -28,7 +29,7 @@
 
 }
 a:hover {
-    box-shadow: 0px 0px 15px 0px darkred;
+    box-shadow: 0px 0px 5px 0px darkred;
 }
 .letra {
 
@@ -47,4 +48,56 @@ a:hover {
 h1 {
     color: darkblue;
     text-align: center;
+}
+
+label:hover {
+    color: black;
+}
+
+main {
+    flex-direction: column;
+    height: 600px;
+    justify-content: flex-start;
+}
+fieldset {
+    margin: 10px;
+
+}
+
+legend {
+    font-size: smaller;
+}
+
+input, textarea {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    min-width: 500px;
+}
+textarea {
+    field-sizing: content;
+    min-height: 60px;
+    max-height: 220px;
+    resize: none;
+}
+.botonesCorreo {
+    display: flex;
+    flex-direction: row-reverse;
+    .bCorreo {
+        margin: 5px 10px;
+    }
+}
+
+.obligatorio {
+    color: brown;
+}
+
+textarea:focus {
+    outline: none;
+    border: 2px solid black;
+}
+
+p {
+    width: 250px;
+    font-weight: bolder;
+    color: #42b72a;
 }
