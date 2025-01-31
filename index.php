@@ -1,16 +1,7 @@
 <?php 
 session_start();
 
-if ($_SESSION['nombre'] == "andres"){
-    $user = "Andrés";
-    $letra = "A";
-} else if ($_SESSION['nombre'] == "ivan") {
-    $user = "Iván";
-    $letra = "I";
-    } else  {
-        $user = "Juan";
-        $letra = "J";
-    }
+$letra = "R";
 ?>
 
 
@@ -35,7 +26,7 @@ if ($_SESSION['nombre'] == "andres"){
                 <p  class='letra'><?=$letra ?></p> 
             </div> 
 
-            <p class="nombre"><?= $user ?></p>  
+            <p class="nombre"><?= $_SESSION['nombre']; ?></p>  
         </div>
         <a href="logout.php" class="cerrarSesion">Cerrar Sesión</a>
     </div>

@@ -52,7 +52,7 @@
         <h3>Registrate</h3>
         <h4>Es gratis y para todo el mundo</h4>
         
-        <form action="" class="formularioRegistro" method="POST">
+        <form action="registration_control.php" class="formularioRegistro" method="POST">
             <div>
                 <label for="rnombre" class="lregistro">Nombre:</label>
                 <input type="text" name="rnombre" id="rnombre">

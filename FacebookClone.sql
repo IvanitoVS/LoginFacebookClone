@@ -12,7 +12,8 @@ CREATE TABLE usuarios (
     apellido VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL,
     fechaCumple DATE NOT NULL,
-    genero VARCHAR(50) NOT NULL
+    genero VARCHAR(50) NOT NULL,
+    password VARCHAR(50) NOT NULL,
 );
 
 -- Clave Primeria
@@ -28,4 +29,4 @@ ADD password VARCHAR(16) NOT NULL;
 -- INSERT
 
 INSERT INTO usuarios (nombre, apellido, email, fechaCumple, genero)
-VALUES ("Ivan", "Villena", "ivan@mail.com", "2000-07-04", "hombre");
+VALUES ("Ivan", "Villena", "ivan@mail.com", "2000-07-04", "Hombre");
